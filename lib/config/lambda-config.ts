@@ -11,9 +11,7 @@ const DEFAULT_LAMBDA_TIMEOUT_MINS = 15;
 
 // Returns lambda definitions with custom env
 export const getLambdaDefinitions = (context: CDKContext): LambdaDefinition[] => {
-  const environment = {
-    DDB_TABLE: `${context.appName}-${context.environment}`,
-  };
+  const environment = {};
   const lambdaDefinitions: LambdaDefinition[] = [
     {
       name: 'sample-lambda',
