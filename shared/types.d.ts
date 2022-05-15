@@ -5,3 +5,12 @@ export type CDKContext = {
   branchName: string;
   accountNumber: string;
 };
+
+export type LambdaDefinition = {
+  name: string;
+  memoryMB?: number;
+  timeoutMins?: number;
+  environment?: {
+    [key: string]: string;
+  };
+};

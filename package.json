@@ -1,8 +1,8 @@
 {
-  "name": "template-cdk-multi-env-base",
+  "name": "template-cdk-lambda-base",
   "version": "0.1.0",
   "bin": {
-    "template-cdk-multi-env-base": "bin/template-cdk-multi-env-base.js"
+    "template-cdk-lambda-base": "bin/template-cdk-lambda-base.js"
   },
   "scripts": {
     "build": "tsc",
@@ -11,6 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.97",
     "@types/git-branch": "^2.0.2",
     "@types/jest": "^27.5.0",
     "@types/node": "10.17.27",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "2.24.1",
+    "aws-lambda": "^1.0.7",
     "constructs": "^10.0.0",
     "git-branch": "^2.0.1",
     "source-map-support": "^0.5.21"

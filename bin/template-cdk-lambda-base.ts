@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { CDKBaseStack } from '../lib/template-cdk-multi-env-base-stack';
+import { CDKLambdaBaseStack } from '../lib/template-cdk-lambda-base-stack';
 
 import { CDKContext } from '../shared/types';
 import gitBranch from 'git-branch';
@@ -42,7 +42,12 @@ const createStacks = async () => {
       tags,
     };
 
-    const cdkBaseStack = new CDKBaseStack(app, `${context.appName}-cdk-base-stack-${context.environment}`, stackProps, context);
+    const cdkLambdaBaseStack = new CDKLambdaBaseStack(
+      app,
+      `${context.appName}-cdk-lambda-base-stack-${context.environment}`,
+      stackProps,
+      context
+    );
   } catch (error) {
     console.error(error);
   }

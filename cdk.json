@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/template-cdk-multi-env-base.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/template-cdk-lambda-base.ts",
   "watch": {
     "include": ["**"],
     "exclude": ["README.md", "cdk*.json", "**/*.d.ts", "**/*.js", "tsconfig.json", "package*.json", "yarn.lock", "node_modules", "test"]
@@ -16,7 +16,7 @@
     "@aws-cdk/aws-iam:minimizePolicies": true,
     "@aws-cdk/core:target-partitions": ["aws", "aws-cn"],
     "globals": {
-      "appName": "cdk-multi-env-base",
+      "appName": "cdk-lambda-base",
       "region": "ap-southeast-2"
     },
     "environments": [
