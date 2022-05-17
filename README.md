@@ -1,14 +1,7 @@
-# Welcome to your CDK TypeScript project
+# Template for deploying Lambda Functions using CDK
 
-This is a blank project for CDK development with TypeScript.
+This is a template repository which provides a CDK project structure to build and deploy Lambda Functions using AWS CDK
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Please take a look at below video where I explained how to develop & deploy Lambda Functions using AWS CDK
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+https://youtu.be/DUNEuhOQ1k4
